@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Typing Game</title>
+    <link rel="stylesheet" href="Chinese Typing Game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button class="settings-btn" id="settings-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+    
+    <div class="settings" id="settings">
+        <form id="setting-form">
+            <div>
+                <label for="difficulty">Difficulty</label>
+                <select id="difficulty">
+                    <option value="level1">Level 1</option>
+                    <option value="level2">Level 2</option>
+                    <option value="level3">Level 3</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+    <div class="container">
+        <h2>💻 Chinese Typing Game 中文打字游戏 💻</h2>
+        <small>Type the following 请你打这些字:</small>
+        <h1 id="word"></h1>
+        <input type="text" id="text" autocomplete="off" placeholder="Type here">
+        <p class="time-container">
+            Time left: <span id="time">10s</span>
+        </p>
+        <p class="score-container">
+            Score: <span id="score">0</span>
+        </p>
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <script src="Chinese Typing Game.js"></script>
+</body>
+</html>
