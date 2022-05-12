@@ -1,1 +1,1 @@
-# projects
+This is a Chinese Typing Game on the webpage. I used HTML, CSS and Javascript to do it. Each time when the player see a word, the player should type the exact same word. If the input matches the answer, 5 seconds will be added to the time countdown and 1 point will be added to the player's score. When countdown ends, game is over. More fratures could be added to this game such as different levels.
